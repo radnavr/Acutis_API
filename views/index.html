@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acutis API</title>
+    <style>
+      html {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 62.5%;
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        align-items: center;
+        background-color: #1d1d1d;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+      }
+      .code-container {
+        background-color: rgba(0, 171, 228, 0.1);
+        border: 2px solid #00abe4;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 3rem 0;
+        width: 100%;
+      }
+      .content-container {
+        width: 350px;
+      }
+      .code-block {
+        margin: 1rem;
+      }
+      h1 {
+        color: #00abe4;
+        font-size: 4rem;
+        margin: 3rem 0;
+        text-align: center;
+      }
+      p {
+        color: #effafd;
+        font-size: 1.6rem;
+        margin: 0;
+      }
+      .code {
+        color: #00abe4;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .text {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <h1>ACUTIS API</h1>
+      <p class="text">
+        Věděli jste, že patronem programátorů a internetu je blahoslavený Carlo
+        Acutis? Pokud ne, tak jste na správném místě, protože Acutis API je
+        ultimátní branou do Acutisverza.<br />
+        Acutis API nabízí routes, které poskytují JSON array jeho skutků či JSON
+        array odkazů na obrázky, související především s jeho posmrtným životem.
+        Kromě těchto arrays ale můžete získat i jeden náhodný skutek či jeden
+        náhodný obrázek.
+      </p>
+      <div class="code-container">
+        <div class="code-block">
+          <p class="code">// GET all images</p>
+          <p class="code">http://localhost:5000/img/all</p>
+        </div>
+        <div class="code-block">
+          <p class="code">// GET one random image</p>
+          <p class="code">http://localhost:5000/img/one</p>
+        </div>
+        <div class="code-block">
+          <p class="code">// GET all deeds</p>
+          <p class="code">http://localhost:5000/deeds/all</p>
+        </div>
+        <div class="code-block">
+          <p class="code">// GET one random deed</p>
+          <p class="code">http://localhost:5000/deeds/one</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
