@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const connectMongo = require("./config/connectMongo");
 const {
   getAllImages,
@@ -9,7 +10,7 @@ const { getAllDeeds, getOneDeed } = require("./controllers/mongoControllers");
 const { getIndexPage, get404Page } = require("./controllers/staticControllers");
 
 const app = express();
-
+app.use(cors());
 connectMongo();
 
 app.get("/", getIndexPage);
